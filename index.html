@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Decodificador de texto</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#" class="titulo">DECOTEX</a>
+            </nav>
+        </header>
+        <main class="principal">
+            <div class="inicio">
+                <form>
+                    <div class="texto-inicial">
+                        <textarea name="Texto para criptrografar" id="texto-inicial" placeholder="Digite seu texto"></textarea>
+                    </div>
+                    <span class="restricao">Insira apenas letras minúsculas e sem acentos ou caracteres especiais!</span>
+                    <div class="botoes">
+                        <button type="button" id="crip" value="Criptografar">Criptografar</button>
+                        <button type="button" id="descrip" value="Descriptografar">Descriptografar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="final">
+                <div class="mensagem">
+                    <div class="antes">
+                        <img src="img/img.png" alt="Imagem pessoa buscando algo" class="imagem">
+                        <p class="prin">Nenhuma mensagem encontrada</p>
+                        <p class="extra">Digite um texto que você deseja criptografar ou descriptografar.</span>
+                    </div>
+                    <div class="final">
+                        <div class="mensagem">
+                            <div class="depois">
+                                <div class="conteudo">
+                                    <p class="texto-convertido"></p>
+                                </div>
+                                <div class="copiar-container">
+                                    <button class="copiar">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="sobre-autor">
+            <p>Desenvolvido por <span class="autor">Rayssa Silva Costa</span> durante o primeiro Chalenge do curso ONE turma T7.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

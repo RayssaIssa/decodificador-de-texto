@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --cor-principal: #757FB2;
+    --cor-secundaria: #AAB2D5;
+    --cor-terciaria: #E9ECF8;
+    --cor-texto: #343A40;
+    --fonte: "Open Sans", sans-serif;
+}
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background-color: var(--cor-principal);
+}
+
+/* HEADER */
+header{
+    margin: 10px 20px;
+}
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cor-terciaria);
+    font-size: 35px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* MAIN */
+.principal{
+    font-family: var(--fonte);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.inicio{
+    margin: 0 10px;
+}
+.inicio .texto-inicial textarea{
+    background-color: transparent;
+    width: 95%;
+    height: 100%;
+    min-height: 20rem;
+    border: none;
+    font-family: var(--fonte);
+    font-size: 32px;
+    padding: 0 10px;
+    outline: none;
+    color: var(--cor-terciaria);
+}
+.inicio .texto-inicial textarea::placeholder {
+    color: var(--cor-texto);
+  }
+.inicio .texto-inicial textarea::selection{
+    text-decoration: none;
+    border: none;
+}
+.inicio .restricao{
+    color: var(--cor-texto);
+    font-size: 15px;
+}
+.botoes button{
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 10rem;
+    height: 3rem;
+    padding: 1% 4%;
+    margin: 10px 2px;
+    cursor: pointer;
+    border: 1px solid var(--cor-terciaria);
+}
+.botoes button:hover{
+    transition: 0.4s;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+}
+.final{
+    margin: 0px;
+}
+.final .mensagem{
+    background-color: var(--cor-terciaria);
+    border-radius: 20px;
+    width: 20rem;
+    height: 100%;
+}
+.final .mensagem .antes{
+    display: block;
+}
+.final .mensagem .antes img{
+    width: 81%;
+    height: 100%;
+    padding: 10px 0;
+    margin-left: 15px;
+}
+.final .mensagem .antes .prin{
+    color: var(--cor-principal);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+}
+.final .mensagem .antes .extra{
+    color: var(--cor-texto);
+    font-size: 16px;
+    text-align: center;
+}
+.final .mensagem .depois {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+.final .mensagem .conteudo {
+    max-height: 300px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
+    margin-bottom: 10px; 
+}
+.final .mensagem .texto-convertido {
+    width: 100%;
+    color: var(--cor-principal);
+    font-size: 32px;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+}
+.final .mensagem .copiar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.final .mensagem .copiar {
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: transparent;
+    width: 85%;
+    height: 3rem;
+    color: var(--cor-principal);
+    cursor: pointer;
+    border: 1px solid var(--cor-principal);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    box-sizing: border-box;
+}
+.final .mensagem .copiar:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    transition: 0.4s;
+}
+.conteudo::-webkit-scrollbar, #texto-inicial::-webkit-scrollbar{
+    width: 5px;
+    background-color: var(--cor-secundaria);
+}
+
+/* FOOTER */
+.sobre-autor{
+    width: 100vw;
+    background-color: var(--cor-secundaria);
+    padding: 1rem 0;
+    border-top: 1px solid var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte);
+    color: var(--cor-texto);
+    bottom: 0px;
+    margin-top: 10px;
+}
+.autor{
+    font-style: italic;
+    color: var(--cor-terciaria);
+}
