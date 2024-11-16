@@ -1,4 +1,4 @@
-# decodificador-de-texto
+# Decodificador de Texto
 Desafio desenvolvido no curso da ONE T7, um Decodificar de texto que permite ao usuário criptografar e descriptografar menssagens textuais que possuam apenas letras minusculas e sem acentos ou caracteres especiais.
 
 Visite a página: decodificador-de-texto-n44sg6e1x-rayssaissas-projects.vercel.app
